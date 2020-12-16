@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+<head>
+  <title>Siru Hämäläinen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Etusivulle</a></li>
+        <li><a href="koulutyot.html">Koulutyöt</a></li>        
+        <li><a href="tyohistoria.html">Työhistoria</a></li>
+        <li><a href="harrastukset.html">Harrastukset</a></li>
+        <li><a href="otayhteytta.html">Ota yhteyttä</a></li>
+      </ul>
+    </div>
+  </nav>
+          
+
+<div class="jumbotron text-center">
+    <h1>Siru Hämäläinen</h1>
+    <p>Tiedonkäsittelyn opiskelija, bioanalyytikko (AMK), äiti.</p> 
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <h2>Ota yhteyttä!</h2>
+
+        <form action="mailto:siru1h@hotmail.com" method="post">
+            <fieldset>
+                <label for="nimi">Etu- ja sukunimi:</label><br>
+                <input type="text" name="nimi" id="nimi" required><br>
+                <label for="sähköposti">Sähköpostiosoite:</label><br>
+                <input type="email" name="email" id="sähköposti" required><br>
+                <label for="puhelinnumero">Puhelinnumero:</label><br>
+                <input type="tel" name="puhelinnumero" id="puhelinnumero" required><br>
+                <br>
+        
+                Asiani koskee:<br>
+                <select name="kiinnostus">
+                        <option value="Koodaus">Työnhaku</option>
+                        <option value="Labra">Bioanalyytikon työ</option>
+                        <option value="harrastukset">Harrastukset</option>
+                </select>
+                <br>
+                <br>
+        
+                <label for="sähköpostilla">Yhteydenotto sähköpostilla</label>
+                <input type="radio" name="yhteydenotto" id="sähköpostilla" value="sähköpostilla" checked><br>
+                <label for="puhelimitse">Yhteydenotto puhelimitse</label>
+                <input type="radio" name="yhteydenotto" id="puhelimitse" value="puhelimitse"><br>
+                <br>
+                Viestisi:<br>
+                <textarea name="viesti" rows="4" cols="80">
+        
+                </textarea>
+        
+                <br>
+                <input type="submit" value="Lähetä" name="laheta">
+    
+        </fieldset>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
